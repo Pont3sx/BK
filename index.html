@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Para: BK ❤️</title>
   <style>
     body {
       margin: 0;
-      background: #ffffff;
+      background: #6b0303;
       overflow-x: hidden;
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      color: #000000;
+      color: #ffffff;
     }
 
     h1 {
@@ -21,6 +21,7 @@
 
     p {
       font-size: 1.5em;
+      font-style: oblique;
       max-width: 80%;
       margin: 20px auto;
     }
@@ -94,6 +95,58 @@
         transform: scale(1.1);
       }
     }
+
+    /* Novo estilo para o container do player */
+    .spotify-container {
+      max-width: 600px;
+      margin: 40px auto 60px;
+      background-color: rgba(255, 255, 255, 0.1); /* branco transparente suave */
+      padding: 20px 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.5em;
+      font-style: italic;
+      user-select: none;
+    }
+
+    .spotify-container h2 {
+      margin-bottom: 15px;
+      color: #ffe6e6;
+      font-weight: 700;
+      font-size: 1.8em;
+    }
+
+    iframe.spotify-embed {
+      border-radius: 14px;
+      width: 100%;
+      height: 152px;
+      border: none;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+      transition: box-shadow 0.3s ease;
+    }
+
+    iframe.spotify-embed:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.8);
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      .spotify-container {
+        max-width: 90%;
+        padding: 15px 18px;
+        font-size: 1.2em;
+      }
+
+      .spotify-container h2 {
+        font-size: 1.3em;
+      }
+
+      iframe.spotify-embed {
+        height: 130px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -103,17 +156,30 @@
     <img src="mo1.jpeg" alt="Foto 1">
     <img src="mo2.jpeg" alt="Foto 2">
     <img src="mo3.jpeg" alt="Foto 3">
+    <img src="mo8.jpeg" alt="Foto 8">
     <img src="mo4.jpeg" alt="Foto 4">
-    <img src="mo5.jpeg" alt="Foto 5">
     <img src="mo6.jpeg" alt="Foto 6">
     <img src="mo7.jpeg" alt="Foto 7">
-    <img src="mo8.jpeg" alt="Foto 8">
+    <img src="mo5.jpeg" alt="Foto 5">
   </div>
 
   <!-- Mensagem de Dia dos Namorados -->
   <h1>Feliz Dia dos Namorados! </h1>
   <p>Nunca duvide que eu te amo. Eu amo você a cada dia mais um pouco. Obrigada por sempre estar comigo e me apoiar em tudo. Você é incrível e se tornou uma das partes mais lindas da minha vida. Obrigada por topar entrar nessa jornada comigo. </p>
-  <p>ass:Mily</p>
+  <p>ass:Mily❤️</p>
+  <div style="height: 2px; background-color: black; width: 100%;"></div>
+
+  <!-- Musica para amo -->
+  <div class="spotify-container">
+    <h2>"Música que me faz lembrar da gente"</h2>
+    <iframe
+      class="spotify-embed"
+      src="https://open.spotify.com/embed/track/5wG7UpUik9lpxUWjQFadPo?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+      title="Spotify Player"
+    ></iframe>
+  </div>
 
   <script>
     // Função para criar corações animados
@@ -135,4 +201,5 @@
 
 </body>
 </html>
+
 
